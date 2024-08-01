@@ -1,29 +1,29 @@
-const form = document.querySelector('.feedback__form');
+// const form = document.querySelector('.feedback__form');
 
-form.addEventListener('submit', onFormSubmit);
+// form.addEventListener('submit', onFormSubmit);
 
-getLocalStorage();
+// getLocalStorage();
 
-function onFormSubmit(e) {
-    e.preventDefault();
+// function onFormSubmit(e) {
+//     e.preventDefault();
 
-    const formData = {
-        name: e.target.name.value,
-        message: e.target.message.value,
-    }
+//     const formData = {
+//         name: e.target.name.value,
+//         message: e.target.message.value,
+//     }
 
-    localStorage.setItem('feedbackData', JSON.stringify(formData));
+//     localStorage.setItem('feedbackData', JSON.stringify(formData));
 
-    form.reset();
-}
+//     form.reset();
+// }
 
-function getLocalStorage() {
-    const savedData = localStorage.getItem('feedbackData');
+// function getLocalStorage() {
+//     const savedData = localStorage.getItem('feedbackData');
 
-    if (savedData) {
-        const parsedData = JSON.parse(savedData);
+//     if (savedData) {
+//         const parsedData = JSON.parse(savedData);
 
-        form.elements.name.value = parsedData.name;
-        form.elements.message.value = parsedData.message;
-    }
-}
+//         form.elements.name.value = parsedData.name;
+//         form.elements.message.value = parsedData.message;
+//     }
+// }
