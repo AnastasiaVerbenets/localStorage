@@ -10,6 +10,7 @@
 }
 
 .user-form input {
+  margin-top: 10px;
   font: inherit;
   padding: 8px;
   outline: 1px solid black;

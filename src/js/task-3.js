@@ -1,13 +1,12 @@
-const form = document.querySelector('.user-form');
+const userForm = document.querySelector('.user-form');
 
-form.addEventListener('submit', onFormSubmit);
+userForm.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(e) {
     e.preventDefault();
 
-    const userLogin = form.elements.login.value;
-    const userPassword = form.elements.password.value;
-
+    const userLogin = userForm.elements.login.value;
+    const userPassword = userForm.elements.password.value;
 
     if (e.submitter.id === 'submit-btn') {
         const formData = {
@@ -35,5 +34,5 @@ function onFormSubmit(e) {
         }
     }
 
-    form.reset();
+    userForm.reset();
 }
